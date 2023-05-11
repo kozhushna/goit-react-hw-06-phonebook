@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux';
 
-import PropTypes from 'prop-types';
-import { nanoid } from 'nanoid';
+// import PropTypes from 'prop-types';
+// import { nanoid } from 'nanoid';
 
 import { addContact } from '../../redux/contactsSlice';
 
