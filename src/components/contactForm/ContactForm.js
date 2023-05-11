@@ -1,31 +1,10 @@
 import { useDispatch } from 'react-redux';
-
-// import PropTypes from 'prop-types';
-// import { nanoid } from 'nanoid';
-
 import { addContact } from '../../redux/contactsSlice';
 
 import './ContactForm.css';
 
 function ContactForm() {
   const dispatch = useDispatch();
-  // const [name, setName] = useState('');
-  // const [number, setNumber] = useState('');
-
-  // const handleChangeValue = ({ target: { name, value } }) => {
-  //   switch (name) {
-  //     case 'name':
-  //       setName(value);
-  //       break;
-
-  //     case 'number':
-  //       setNumber(value);
-  //       break;
-
-  //     default:
-  //       throw Error(`Does not supported '${name}'`);
-  //   }
-  // };
 
   const handleSubmit = event => {
     event.preventDefault();
@@ -69,9 +48,5 @@ function ContactForm() {
     </form>
   );
 }
-
-// ContactForm.propTypes = {
-//   onAddNewContact: PropTypes.func.isRequired,
-// };
 
 export default ContactForm;
