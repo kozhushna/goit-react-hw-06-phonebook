@@ -10,10 +10,12 @@ import {
 } from 'redux-persist';
 
 import { contactsReducer } from './contactsSlice';
+import { filterReducer } from './filterSlice';
 
 export const store = configureStore({
   reducer: {
     contactsData: contactsReducer,
+    filterData: filterReducer,
   },
   middleware(getDefaultMiddleware) {
     return getDefaultMiddleware({
